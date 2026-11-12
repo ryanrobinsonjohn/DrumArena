@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Drum Arena - a simple guide to drum parts, tone, sound mixing and genres.">
+    <title>Drum Arena</title>
+    <link rel="icon" type="image/png" href="images/icon1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+    <noscript>
+        <style>
+            #preloader { display: none; }
+            .flexhead, .flexexplore { opacity: 1; transform: none; }
+            .flexboxhead::before { transform: none; }
+            .navdrums { position: static; opacity: 1; visibility: visible; transform: none; }
+        </style>
+    </noscript>
+</head>
+
+
+<body id="top">
+
+    <div id="preloader">
+        <img src="images/preloader.gif" alt="Loading...">
+    </div>
+
+
+    <!-- ===================== NAVBAR ===================== -->
+    <header>
+        <div class="flexnavbox">
+            <div class="navboxh1">
+                <img src="images/icon1.png" height="50px" width="65px">
+                <a href="index.html" class="boxh1">Drum Arena</a>
+            </div>
+
+            <!-- menu button (only visible on phones) -->
+            <button class="navtoggle" id="navtoggle" aria-label="Open menu" aria-expanded="false" aria-controls="navmenu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="navdrums" id="navmenu" aria-label="Main">
+                <a href="#about" class="navabout"><h3>About</h3></a>
+                <a href="#learnmore" class="navlearnmore"><h3>Learn More</h3></a>
+                <a href="#jam" class="navjam"><h3>Jamming</h3></a>
+                <a href="#genres" class="navgenres"><h3>Genres</h3></a>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- ===================== front page ===================== -->
+    <div class="flexboxhead">
+        <div class="flexback">
+
+            <div class="flexhead">
+                <h1><span>Feel the Beat</span><span class="flexheadline2">Understand the Drum.</span></h1>
+            </div>
+            <div class="flexexplore"><button onclick="location.href='#about'"><h3>Explore...</h3></button></div>
+
+        </div>
+    </div>
+
+
+    <!-- ===================== ABOUT ===================== -->
+    <div class="flexboxpara" id="about">
+
+        <div class="flexpara">
+            <h2 class="abouthead">About</h2>
+            <p>
+                Drums are the heartbeat of music. Every kick, snare and cymbal adds rhythm, feeling and energy to a song. Here you can learn the parts of a drum kit, how drum tone is shaped, how drums are mixed in a recording, and how each genre uses them in its own way.
+            </p>
+        </div>
+
+        <!-- link to the full guide page -->
+        <div class="flexboxlearnmore">
+            <section class="boxlearnmore" id="learnmore">
+                <p class="boxlearntag">THE FULL GUIDE</p>
+                <h3>From your first beat<br>to advanced grooves.</h3>
+                <p class="boxlearntext">Parts, tuning, rudiments, mixing and more, all in one place.</p>
+                <a href="aboutdrums.html" class="flexboxlearnbtn">Know More About Drums</a>
+            </section>
+        </div>
+
+        <!-- six small cards -->
+        <div class="flexparasection">
+
+            <div class="flexparasectionone">
+                <div class="flexsecparts" id="parts">
+                    <img src="images/drumparts.png" class="secimage" alt="Illustration of a drum kit">
+                    <h3 class="abouthead">Parts of the Drum</h3>
+                    <p>Know every piece, from the kick and snare to toms, hi-hats and cymbals.</p>
+                </div>
+
+                <div class="flexsectone" id="tone">
+                    <img src="images/drumtone.png" class="secimage" alt="Close-up of a snare drum">
+                    <h3 class="abouthead">Drum Tone</h3>
+                    <p>Learn how tuning, heads, size and playing style change the sound.</p>
+                </div>
+
+                <div class="flexsecmix" id="mixing">
+                    <img src="images/eqmix.png" class="secimage" alt="Mixing console sliders">
+                    <h3 class="abouthead">Sound Mixing</h3>
+                    <p>See how EQ, compression and panning make drums punchy and clear.</p>
+                </div>
+            </div>
+
+            <div class="flexparasectiontwo">
+                <div class="flexsectimekeep" id="timekeeping">
+                    <img src="images/clockpng.png" class="secimage" alt="Clock">
+                    <h3 class="abouthead">Timekeeping</h3>
+                    <p>Acting as the human metronome, the drummer maintains a consistent tempo so the entire band stays together.</p>
+                </div>
+
+                <div class="flexsecbuildgroove" id="groove">
+                    <img src="images/groove.jpeg" class="secimage" alt="Drummer playing a groove">
+                    <h3 class="abouthead">Building the Groove</h3>
+                    <p>Working closely with the bass guitar, the rhythm section creates the primary groove and feel of the song.</p>
+                </div>
+
+                <div class="flexseccondym" id="dynamics">
+                    <img src="images/drumdynamics.jpeg" class="secimage" alt="Drummer shaping dynamics">
+                    <h3 class="abouthead">Controlling Dynamics and Energy</h3>
+                    <p>Drummers shift the emotional intensity by playing softly during verses and building power during choruses.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ===================== JAMMING ===================== -->
+    <div class="flexboxjam" id="jam">
+        <div class="flexjam">
+
+            <div class="flexjampara">
+                <p class="jamtag">SESSION</p>
+                <h2>Jamming</h2>
+                <!-- ✏️ edit this line if you like -->
+                <p class="jamtext">Drums are never alone. Watch how the kit locks in with the rest of the band.</p>
+            </div>
+
+            <figure class="videojam">
+                <div class="videoshell">
+                    <video src="band video.mp4" controls preload="metadata" playsinline></video>
+                </div>
+                <figcaption>
+                    <span>Band session</span>
+                </figcaption>
+            </figure>
+
+        </div>
+    </div>
+
+
+    <!-- ===================== GENRES ===================== -->
+    <section class="genres-section" id="genres">
+        <div class="deck">
+
+            <!-- ================= JAZZ CARD ================= -->
+            <article class="gc" style="--i:0; --c:0; --r:0; --mc:0; --mr:0; --img:url('images/jazz-drum.jpg'); --tint:#3a2414">
+                <input type="checkbox" id="flip-jazz" class="gc-flip" aria-label="Flip the Jazz card">
+                <div class="gc-inner">
+            
+                    <!-- FRONT SIDE -->
+                    <div class="gc-face gc-front">
+                        <div class="gc-bg"></div>
+                        <div class="gc-content">
+                            <h3 class="gc-title">Jazz</h3>
+                            <p class="gc-text">Improvisational music emphasizing swing, syncopation, and musical conversation. Drums provide dynamic support with brushes, ride cymbal patterns, and interactive comping.</p>
+                            <label for="flip-jazz" class="gc-btn">Know more</label>
+                        </div>
+                    </div>
+            
+                    <!-- BACK SIDE (shows after the button is tapped) -->
+                    <div class="gc-face gc-back">
+                        <h3 class="gc-title">Jazz</h3>
+                        <div class="gc-more">
+                            <h4>Vibe</h4>
+                            <p>Sophisticated, improvisational, swinging</p>
+                            <h4>Tempo</h4>
+                            <p>60-300 BPM (highly variable)</p>
+                            <h4>EQ Approach</h4>
+                            <ul>
+                                <li>Kick: Natural (minimal EQ), slight 60 Hz warmth, no click boost</li>
+                                <li>Snare: Wide-open (minimal cuts), gentle 200 Hz, 5-8 kHz for brush clarity</li>
+                                <li>Toms: Natural resonance, no aggressive cutting</li>
+                            </ul>
+
+                            <h4>Tuning</h4>
+                            <ul>
+                                <li>Kick: Low-medium (warm, resonant)</li>
+                                <li>Snare: Low-medium (sensitive, articulate)</li>
+                                <li>Toms: Low tension (singing sustain)</li>
+                            </ul>
+
+                            <h4>Drumsticks</h4>
+                            <ul>
+                                <li>7A or Jazz sticks + Brushes (Regal Tip, Vic Firth Jazz Rake)</li>
+                            </ul>
+
+                            <h4>Cymbals</h4>
+                            <ul>
+                                <li>Thin to Paper-Thin – Zildjian K Constantinople, Istanbul Mehmet, Sabian HH (dark, complex)</li>
+                            </ul>
+                        </div>
+                     <label for="flip-jazz" class="gc-btn gc-btn-back">&larr; Back</label>
+                    </div>
+            
+                </div>
+            </article>
+        
+            <!-- ================= REGGAE CARD ================= -->
+            <article class="gc" style="--i:1; --c:1; --r:0; --mc:1; --mr:0; --img:url('images/Reggae-drum.jpg'); --tint:#1f3a2c">
+                <input type="checkbox" id="flip-reggae" class="gc-flip" aria-label="Flip the Reggae card">
+                <div class="gc-inner">
+            
+                    <!-- FRONT SIDE -->
+                    <div class="gc-face gc-front">
+                        <div class="gc-bg"></div>
+                        <div class="gc-content">
+                            <h3 class="gc-title">Reggae</h3>
+                            <p class="gc-text">Jamaican music characterized by offbeat rhythm guitar (the "skank"), emphasis on beats 2 & 4, and deep, steady bass. Drums play a laid-back one-drop pattern.</p>
+                            <label for="flip-reggae" class="gc-btn">Know more</label>
+                        </div>
+                    </div>
+            
+                    <!-- BACK SIDE (shows after the button is tapped) -->
+                    <div class="gc-face gc-back">
+                        <h3 class="gc-title">Reggae</h3>
+                        <div class="gc-more">
+                            <h4>Vibe:</h4>
+                            <p>Relaxed, groove-heavy, bass-driven</p>
+                            <h4>Tempo:</h4>
+                            <p>60-90 BPM</p>
+                            <h4>EQ Approach</h4>
+                            <ul>
+                                <li>Kick: Deep 50-60 Hz (steady pulse), cut 200-400 Hz, minimal click</li>
+                                <li>Snare: Boost 150-250 Hz (body), gentle 3-5 kHz (rim cross-stick tone)</li>
+                                <li>Toms: Natural, minimal processing</li>
+                            </ul>
+
+                            <h4>Tuning</h4>
+                            <ul>
+                                <li>Kick: Low (deep, controlled)</li>
+                                <li>Snare: Medium-low (fat, dry)</li>
+                                <li>Toms: Low-medium (warm)</li>
+                            </ul>
+
+                            <h4>Drumsticks</h4>
+                            <ul>
+                                <li>5A or Hot Rods – lighter touch for groove dynamics</li>
+                            </ul>
+
+                            <h4>Cymbals</h4>
+                            <ul>
+                                <li>Medium – Zildjian A, Sabian AA (controlled wash)</li>
+                            </ul>
+                        </div>
+                    <label for="flip-reggae" class="gc-btn gc-btn-back">&larr; Back</label>
+                    </div>
+            
+                </div>
+            </article>
+        
+            <!-- ================= ROCK CARD ================= -->
+            <article class="gc" style="--i:2; --c:2; --r:0; --mc:0; --mr:1; --img:url('images/rock-drum.jpg'); --tint:#401616">
+                <input type="checkbox" id="flip-rock" class="gc-flip" aria-label="Flip the Rock card">
+                <div class="gc-inner">
+            
+                    <!-- FRONT SIDE -->
+                    <div class="gc-face gc-front">
+                        <div class="gc-bg"></div>
+                        <div class="gc-content">
+                            <h3 class="gc-title">Rock</h3>
+                            <p class="gc-text">High-energy music built on electric guitars, bass, and drums. Emphasizes strong backbeat (snare on 2 & 4), powerful dynamics, and driving rhythm. Originated 1950s-60s.</p>
+                            <label for="flip-rock" class="gc-btn">Know more</label>
+                        </div>
+                    </div>
+            
+                    <!-- BACK SIDE (shows after the button is tapped) -->
+                    <div class="gc-face gc-back">
+                        <h3 class="gc-title">Rock</h3>
+                        <div class="gc-more">
+                            <h4>Vibe:</h4>
+                            <p>Energetic, rebellious, guitar-driven</p>
+                            <h4>Tempo:</h4>
+                            <p>90-140 BPM</p>
+                            <h4>EQ Approach</h4>
+                            <ul>
+                                <li>Kick: Boost 60-80 Hz (thump), cut 300-500 Hz (mud), boost 3-5 kHz (beater click)</li>
+                                <li>Snare: Boost 200 Hz (body), boost 4 kHz (crack), high-pass at 80 Hz</li>
+                                <li>Toms: Slight boost at fundamentals, cut 400 Hz, boost 3 kHz for attack</li>
+                            </ul>
+
+                            <h4>Tuning</h4>
+                            <ul>
+                                <li>Kick: Medium-low (tight sustain, punchy)</li>
+                                <li>Snare: Medium-high (crisp, open ring)</li>
+                                <li>Toms: Descending intervals (4ths/5ths between toms)</li>
+                            </ul>
+
+                            <h4>Drumsticks</h4>
+                            <ul>
+                                <li>5A or 5B (Vic Firth, Promark) – balanced weight, good rimshots</li>
+                            </ul>
+
+                            <h4>Cymbals</h4>
+                            <ul>
+                                <li>Medium to Heavy weight – Zildjian A Series, Sabian AA, Paiste 2002</li>
+                            </ul>
+                        </div>
+                    <label for="flip-rock" class="gc-btn gc-btn-back">&larr; Back</label>
+                    </div>
+            
+                </div>
+            </article>
+        
+            <!-- ================= TRAP CARD ================= -->
+            <article class="gc" style="--i:3; --c:3; --r:0; --mc:1; --mr:1; --img:url('images/trap-drum.jpg'); --tint:#2a1f45">
+                <input type="checkbox" id="flip-trap" class="gc-flip" aria-label="Flip the Trap card">
+                <div class="gc-inner">
+            
+                    <!-- FRONT SIDE -->
+                    <div class="gc-face gc-front">
+                        <div class="gc-bg"></div>
+                        <div class="gc-content">
+                            <h3 class="gc-title">Trap</h3>
+                            <p class="gc-text">Hip-hop subgenre with booming 808 bass, rapid hi-hat rolls, and syncopated rhythms. Drums are often programmed/sampled with heavy sub-bass and crisp snares.</p>
+                            <label for="flip-trap" class="gc-btn">Know more</label>
+                        </div>
+                    </div>
+            
+                    <!-- BACK SIDE (shows after the button is tapped) -->
+                    <div class="gc-face gc-back">
+                        <h3 class="gc-title">Trap</h3>
+                        <div class="gc-more">
+                            <h4>Vibe:</h4>
+                            <p>Dark, bass-heavy, modern</p>
+                            <h4>Tempo:</h4>
+                            <p>130-170 BPM (double-time feel)</p>
+                            <h4>EQ Approach</h4>
+                            <ul>
+                                <li>Kick: Massive 40-60 Hz (sub-bass), scoop 200-500 Hz completely, boost 2-4 kHz (punch)</li>
+                                <li>Snare: Cut below 150 Hz, huge boost 200-250 Hz (body), boost 5-8 kHz (snap), add 10+ kHz (air)</li>
+                                <li>Toms: Often minimal or replaced with samples</li>
+                            </ul>
+
+                            <h4>Tuning</h4>
+                            <ul>
+                                <li>Kick: Low (long sustain for sub-bass blend)</li>
+                                <li>Snare: High (tight, crisp)</li>
+                                <li>Toms: Medium (often tuned to key of track)</li>
+                            </ul>
+
+                            <h4>Drumsticks</h4>
+                            <ul>
+                                <li>5A – though often triggers/samples are used</li>
+                            </ul>
+
+                            <h4>Cymbals</h4>
+                            <ul>
+                                <li>Hi-hats dominate – Crisp, tight (Zildjian A Custom, Sabian AAX)</li>
+                            </ul>
+                        </div>
+                    <label for="flip-trap" class="gc-btn gc-btn-back">&larr; Back</label>
+                    </div>
+            
+                </div>
+            </article>
+        
+            <!-- ================= WORSHIP CARD ================= -->
+            <article class="gc" style="--i:4; --c:0; --r:1; --mc:0; --mr:2; --img:url('images/worship-drum.jpg'); --tint:#4a3a14">
+                <input type="checkbox" id="flip-worship" class="gc-flip" aria-label="Flip the Worship card">
+                <div class="gc-inner">
+            
+                    <!-- FRONT SIDE -->
+                    <div class="gc-face gc-front">
+                        <div class="gc-bg"></div>
+                        <div class="gc-content">
+                            <h3 class="gc-title">Worship</h3>
+                            <p class="gc-text">Contemporary Christian music designed for congregational singing. Features dynamic builds, emotional swells, and space for vocals. Drums support rather than dominate.</p>
+                            <label for="flip-worship" class="gc-btn">Know more</label>
+                        </div>
+                    </div>
+            
+                    <!-- BACK SIDE (shows after the button is tapped) -->
+                    <div class="gc-face gc-back">
+                        <h3 class="gc-title">Worship</h3>
+                        <div class="gc-more">
+                            <h4>Vibe:</h4>
+                            <p>Uplifting, atmospheric, supportive</p>
+                            <h4>Tempo:</h4>
+                            <p>70-130 BPM</p>
+                            <h4>EQ Approach</h4>
+                            <ul>
+                                <li>Kick: Gentle 50-60 Hz boost, cut 250 Hz, subtle 2 kHz (less aggressive than rock)</li>
+                                <li>Snare: Boost 150-200 Hz (warmth), 3 kHz (gentle crack), less top-end than rock</li>
+                                <li>Toms: Natural tone, minimal EQ, smooth sustain</li>
+                            </ul>
+
+                            <h4>Tuning</h4>
+                            <ul>
+                                <li>Kick: Medium (warm, controlled decay)</li>
+                                <li>Snare: Medium (musical tone, not overly crispy)</li>
+                                <li>Toms: Medium tension, resonant</li>
+                            </ul>
+
+                            <h4>Drumsticks</h4>
+                            <ul>
+                                <li>5A – lighter touch for dynamics</li>
+                            </ul>
+
+                            <h4>Cymbals</h4>
+                            <ul>
+                                <li>Medium-Thin to Medium weight – Zildjian K series, Istanbul Agop, Sabian HHX (warm, washy)</li>
+                            </ul>
+                        </div>
+                    <label for="flip-worship" class="gc-btn gc-btn-back">&larr; Back</label>
+                    </div>
+            
+                </div>
+            </article>
+        
+            <!-- ================= LATIN CARD ================= -->
+            <article class="gc" style="--i:5; --c:1; --r:1; --mc:1; --mr:2; --img:url('images/latin-drum.jpg'); --tint:#4a2314">
+                <input type="checkbox" id="flip-latin" class="gc-flip" aria-label="Flip the Latin card">
+                <div class="gc-inner">
+            
+                    <!-- FRONT SIDE -->
+                    <div class="gc-face gc-front">
+                        <div class="gc-bg"></div>
+                        <div class="gc-content">
+                            <h3 class="gc-title">Latin</h3>
+                            <p class="gc-text">Rhythm-focused music rooted in Afro-Caribbean traditions. Features syncopated patterns (clave), complex polyrhythms, and heavy percussion.</p>
+                            <label for="flip-latin" class="gc-btn">Know more</label>
+                        </div>
+                    </div>
+            
+                    <!-- BACK SIDE (shows after the button is tapped) -->
+                    <div class="gc-face gc-back">
+                        <h3 class="gc-title">Latin</h3>
+                        <div class="gc-more">
+                            <h4>Vibe:</h4>
+                            <p>Rhythmic, danceable, percussive</p>
+                            <h4>Tempo:</h4>
+                            <p>80-200+ BPM (varies by style)</p>
+                            <h4>EQ Approach</h4>
+                            <ul>
+                                <li>Kick: Punchy 60-80 Hz, cut 300 Hz, boost 2-3 kHz (articulation)</li>
+                                <li>Snare: Bright (boost 200-300 Hz, 5-7 kHz for rim clarity)</li>
+                                <li>Toms: Open and resonant (minimal damping)</li>
+                            </ul>
+
+                            <h4>Tuning</h4>
+                            <ul>
+                            <li>Kick: Medium-high (fast response)</li>
+                            <li>Snare: High (tight, responsive for ghost notes)</li>
+                            <li>Toms: Medium-high (melodic intervals)</li>
+                            </ul>
+
+                            <h4>Drumsticks</h4>
+                            <ul>
+                            <li>Timbale sticks or 5A – lighter for speed</li>
+                            </ul>
+
+                            <h4>Cymbals</h4>
+                            <ul>
+                            <li>Thin to Medium – Zildjian K, Meinl Byzance (complex wash)</li>
+                            </ul>
+                        </div>
+                    <label for="flip-latin" class="gc-btn gc-btn-back">&larr; Back</label>
+                    </div>
+            
+                </div>
+            </article>
+        
+            <!-- ================= POP CARD ================= -->
+            <article class="gc" style="--i:6; --c:2; --r:1; --mc:0; --mr:3; --img:url('images/pop-drum.jpg'); --tint:#14344a">
+                <input type="checkbox" id="flip-pop" class="gc-flip" aria-label="Flip the Pop card">
+                <div class="gc-inner">
+            
+                    <!-- FRONT SIDE -->
+                    <div class="gc-face gc-front">
+                    <div class="gc-bg"></div>
+                    <div class="gc-content">
+                        <h3 class="gc-title">Pop</h3>
+                        <p class="gc-text">Popular mainstream music with catchy melodies, repetitive hooks, and polished production. Drums are tight, quantized, and radio-ready.</p>
+                        <label for="flip-pop" class="gc-btn">Know more</label>
+                    </div>
+                    </div>
+            
+                    <!-- BACK SIDE (shows after the button is tapped) -->
+                    <div class="gc-face gc-back">
+                        <h3 class="gc-title">Pop</h3>
+                        <div class="gc-more">
+                            <h4>Vibe:</h4>
+                            <p>Catchy, accessible, commercial</p>
+                            <h4>Tempo:</h4>
+                            <p>100-130 BPM</p>
+                            <h4>EQ Approach</h4>
+                            <ul>
+                                <li>Kick: Tight low-end (60-70 Hz), aggressive cut at 400 Hz, boost 4-6 kHz (modern click)</li>
+                                <li>Snare: Boost 200 Hz, heavy boost 4-5 kHz (crisp), add 10 kHz (air)</li>
+                                <li>Toms: Tight/minimal sustain, focus on attack (3-5 kHz)</li>
+                            </ul>
+
+                            <h4>Tuning</h4>
+                            <ul>
+                                <li>Kick: Medium-high (punchy, fast decay)</li>
+                                <li>Snare: High (crisp, controlled)</li>
+                                <li>Toms: Medium-high (short sustain)</li>
+                            </ul>
+
+                            <h4>Drumsticks</h4>
+                            <ul>
+                                <li>5A – precision and speed</li>
+                            </ul>
+
+                            <h4>Cymbals</h4>
+                            <ul>
+                                <li>Thin to Medium – Zildjian A Custom, Sabian AAX (bright, cutting)</li>
+                            </ul>
+                        </div>
+                    <label for="flip-pop" class="gc-btn gc-btn-back">&larr; Back</label>
+                    </div>
+            
+                </div>
+            </article>
+        
+            <!-- ================= METAL CARD ================= -->
+            <article class="gc" style="--i:7; --c:3; --r:1; --mc:1; --mr:3; --img:url('images/metal-drum.jpg'); --tint:#2a1212">
+                <input type="checkbox" id="flip-metal" class="gc-flip" aria-label="Flip the Metal card">
+                <div class="gc-inner">
+            
+                    <!-- FRONT SIDE -->
+                    <div class="gc-face gc-front">
+                        <div class="gc-bg"></div>
+                        <div class="gc-content">
+                            <h3 class="gc-title">Metal</h3>
+                            <p class="gc-text">Aggressive, intense music featuring distorted guitars, complex rhythms, and powerful drums. Often uses double bass pedals and blast beats.</p>
+                            <label for="flip-metal" class="gc-btn">Know more</label>
+                        </div>
+                    </div>
+            
+                    <!-- BACK SIDE (shows after the button is tapped) -->
+                    <div class="gc-face gc-back">
+                        <h3 class="gc-title">Metal</h3>
+                        <div class="gc-more">
+                            <h4>Vibe:</h4>
+                            <p>Aggressive, heavy, technical</p>
+                            <h4>Tempo:</h4>
+                            <p>120-200+ BPM.</p>
+                            <h4>EQ Approach</h4>
+                            <ul>
+                                <li>Kick: Deep boost 50-60 Hz (sub-thump), scoop 300-600 Hz heavily, boost 3-5 kHz (double-bass clarity)</li>
+                                <li>Snare: Cut 200-400 Hz (tighten), boost 1 kHz (body), huge boost 5-8 kHz (crack)</li>
+                                <li>Toms: Tight fundamentals, aggressive attack boost 4-6 kHz</li>
+                            </ul>
+
+                            <h4>Tuning</h4>
+                            <ul>
+                                <li>Kick: Low-medium (controlled, tight for double bass)</li>
+                                <li>Snare: High (extreme crack, minimal ring)</li>
+                                <li>Toms: Low-medium (powerful but controlled)</li>
+                            </ul>
+
+                            <h4>Drumsticks</h4>
+                            <ul>
+                                <li>5B or 2B (Vic Firth Metal series) – durability and power</li>
+                            </ul>
+
+                            <h4>Cymbals</h4>
+                            <ul>
+                                <li>Heavy to Extra Heavy – Zildjian A Heavy, Sabian AAX Metal, Meinl Classics Custom Extreme</li>
+                            </ul>
+                        </div>
+                    <label for="flip-metal" class="gc-btn gc-btn-back">&larr; Back</label>
+                    </div>
+            
+                </div>
+            </article>
+
+            <!-- ================= MAIN "GENRES" CARD (keep LAST) ================= -->
+            <div class="gc gc-hub" tabindex="0" aria-label="Genres: hover, tap or press Tab to open the genre cards">
+                <div class="gc-inner">
+                    <div class="gc-face">
+                        <h2>Genres</h2>
+                        <small class="hint-closed">Hover or tap to explore</small>
+                        <small class="hint-open">Pick a style &darr;</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="sitefooter">
+        <div class="footer-inner">
+
+            <div class="footer-cta">
+                <h2>Keep the beat <em>alive.</em></h2>
+                <a href="aboutdrums.html" class="footer-btn">Read the full drum guide</a>
+            </div>
+
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">Drum Arena</a>
+                    <p>A simple home for drummers and audiophiles. Learn the parts of the kit, shape your drum tone, understand sound mixing and explore how drums sound in different genres. More drum and audio topics will be added, so keep visiting. Happy drumming!</p>
+                </div>
+
+                <nav class="footer-col" aria-label="Explore">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#jam">Jamming</a></li>
+                        <li><a href="#genres">Genres</a></li>
+                        <li><a href="aboutdrums.html">Full Drum Guide</a></li>
+                        <li><a href="aboutme.html">About Me</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-col" aria-label="Learn">
+                    <h4>Learn</h4>
+                    <ul>
+                        <li><a href="#parts">Parts of the Drum</a></li>
+                        <li><a href="#tone">Drum Tone</a></li>
+                        <li><a href="#mixing">Sound Mixing</a></li>
+                        <li><a href="#timekeeping">Timekeeping</a></li>
+                        <li><a href="#groove">Building the Groove</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-col" aria-label="Genres">
+                    <h4>Genres</h4>
+                    <ul>
+                        <li><a href="#genres">Jazz</a></li>
+                        <li><a href="#genres">Reggae</a></li>
+                        <li><a href="#genres">Rock</a></li>
+                        <li><a href="#genres">Trap</a></li>
+                        <li><a href="#genres">Worship</a></li>
+                        <li><a href="#genres">Latin</a></li>
+                        <li><a href="#genres">Pop</a></li>
+                        <li><a href="#genres">Metal</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="year">2026</span> Drum Arena</p>
+                <p class="footer-credits">
+                   Hi!! i am Ryan, this is my first updated website used html and css. All these information are AI generated but these are practical.
+                </p>
+                <a href="#top" class="totop" aria-label="Back to top">Back to top &uarr;</a>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- ===================== SCRIPT ===================== -->
+    <script>
+        /* 1. preloader: fade it out, then start the hero animations */
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                var loader = document.getElementById("preloader");
+                loader.classList.add("hide");
+                document.body.classList.add("loaded");          /* starts the animations */
+                setTimeout(function () { loader.style.display = "none"; }, 600);
+            }, 1500);
+        });
+
+        /* 2. phone menu: open / close */
+        var toggle = document.getElementById("navtoggle");
+        var menu = document.getElementById("navmenu");
+
+        function setMenu(open) {
+            menu.classList.toggle("open", open);
+            toggle.setAttribute("aria-expanded", open);
+            toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+        }
+        toggle.addEventListener("click", function () {
+            setMenu(!menu.classList.contains("open"));
+        });
+        menu.querySelectorAll("a").forEach(function (a) {       /* close after choosing a link */
+            a.addEventListener("click", function () { setMenu(false); });
+        });
+        document.addEventListener("keydown", function (e) {     /* Esc closes it */
+            if (e.key === "Escape") setMenu(false);
+        });
+
+        /* 3. footer year */
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
